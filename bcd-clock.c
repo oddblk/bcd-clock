@@ -20,10 +20,14 @@
 #include <time.h>
 #include <sys/time.h>
 
+//   pin 1 on MAX (Data In)   -> pin 11 on Ras-Pi
+//   pin 12 on MAX (Load /CS) -> pin 13 on Ras-Pi
+//   pin 13 on MAX (clock)    -> pin 12 on Ras-Pi
+
 // note that in defined RPI_GPIO_P1_xx, the _XX is the pin-number on the board!
-#define kPin_Max7219_DataIn   RPI_GPIO_P1_13  //  GPIO 27
+#define kPin_Max7219_DataIn   RPI_GPIO_P1_11  //  GPIO 17   
+#define kPin_Max7219_CS       RPI_GPIO_P1_13  //  GPIO 27
 #define kPin_Max7219_Clock    RPI_GPIO_P1_12  //  GPIO 18
-#define kPin_Max7219_CS       RPI_GPIO_P1_11  //  GPIO 17
 
 const uint8_t max7219_reg_noop        = 0x00;
 const uint8_t max7219_reg_digit0      = 0x01;
