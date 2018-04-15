@@ -18,6 +18,6 @@ If you want your RasPi to run it on startup, then add this line near the end of 
 
 (The '&' forces it to the background.)
 
-I will do a proper blog article on this as soon as my shield PCBs arrive ... but that won't be until after Chinese New Year.
+See my blog post on this project, here: http://danceswithferrets.org/geekblog/?p=1087
 
 Kris.
